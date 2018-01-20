@@ -1,3 +1,4 @@
+# (E)
 ## E(1) Functions (Procedures)
  
 These  are reusable pieces of programs. They allows us  to give a name and encapsulate a block of statements*(codes)*,  allowing us to run that block using the specified name anywhere in the program and any number of times. 
@@ -123,8 +124,58 @@ __Note that the default argument value should be a constant. More precisely, the
         """warn a friend about danger ahead, in number of times."""
         print message * times
         
-    shout('Don't play with python, it's very dangerous') # -> Don't play with python, it's very dangerous
+    shout("Don't play with python, it's very dangerous")    # -> Don't play with python, it's very dangerous
     
-    shout('Don't play with python, it's very dangerous', 2) # -> Don't play with python, it's very dangerous  
+    shout("Don't play with python, it's very dangerous", 2) # -> Don't play with python, it's very dangerous  
                                                             # -> Don't play with python, it's very dangerous 
 ```
+The function named __warning__ is used to print a string as many times as specified.  If we don’t supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of 1 to the parameter times.
+
+In the first usage of __warning__ , we supply only the string and it prints the string once. In the second usage, we supply both the string and an argument __2__ stating that we want to say the string message two  times.
+## E(6) Non keyword and key-worded arguments (\*arg and \**kwargs)
+
+Key worded arguments are \**kwargs are mostly used in function definitions in Odoo. \*args and \**kwargs allow
+us  to pass a variable number of arguments to a function. What variable
+means here is that we do not know beforehand how many arguments can be passed to our function by the user.
+__*args__ is used to send a non-keyworded variable length argument list to the function. 
+Example:
+```python
+    def accumulate(exam_score, *test_scores):
+        print "first normal arg:",  exam_score
+        for test_score in test_scores:
+            print "another arg through *test_scores:", test_score
+            
+            
+accumulate(50, 16, 15)
+```
+The accumulate function, accept one formal positional arguent and the followed by now-keyword arguments(**arg), this enables us to call the function with an unlimited number of  now-keyword argument.
+
+__\**kwargs__ allows us to pass keyworded variable length of arguments to a function. Let say we want to handle named arguments, we should use \**kwargs in the function. 
+Example:
+```python 
+    def greet_me(**kwargs):
+        for key, value in kwargs.items():
+            print("{0} = {1}".format(key, value))
+            
+    greet_me(name="Ajepe babatope") # -> name = Ajepe babatope
+```
+## E(7) The return statement
+The return statement is used to return from a function i.e. break out of the function. We can optionally return a value from the function as well.
+```python
+    def maximum(a, b):
+        """Return the maximum number between a and b."""
+        if a > b:
+            return a # The execution will break here if a > b
+         elif a == b:
+             return 'the numbers are equal' # or here if a == b
+         else:
+             return b # and if b > a it will break here.
+         
+     print maximum(2, 2) # -> the numbers are equal
+```
+The __maximum__ function returns the maximum of the parameters, in this case the numbers supplied to the function.
+__Note that a return statement without a value is equivalent to return None__ . 
+None is a special type in Python that represents nothingness. For example, it is used to indicate that a variable has no value if it has a value of None.
+
+### Summary
+We have seen so covered  many aspects of python functions, that woud=ld be needed for Odoo day to day development,  but note that we still haven’t covered all aspects of them.
