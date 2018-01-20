@@ -179,3 +179,78 @@ None is a special type in Python that represents nothingness. For example, it is
 
 ### Summary
 We have seen so covered  many aspects of python functions, that woud=ld be needed for Odoo day to day development,  but note that we still haven’t covered all aspects of them.
+
+# F
+
+## Modules
+You have seen how we can reuse our code in any program by defining functions once. What if  we wanted to reuse a number of functions in other programs? 
+
+As you might have guessed, the answer is __modules__. There are various methods of writing modules, but the simplest way is to create a __file__ with a __.py__ extension that contains functions and variables.
+
+Another method is to write the modules in the native language in which the Python interpreter itself was written. For example, you can write modules in the C programming language and when compiled, they can be used from your Python code when using the standard Python interpreter.
+
+A module can be imported by another program to make use of its functionality. This is how we can use the Python standard library as well. First, we will see how to use the standard library modules.
+
+```python
+    # module.py 
+    import sys # This import the module.
+    print('The command line arguments are:')
+    for i in sys.argv:
+        print i
+        
+    print '\n\nThe PYTHONPATH is', sys.path, '\n'
+    
+    >> python module.py we are arguments
+        # -> The command line arguments are:
+        # -> module_using_sys.py
+        # -> we
+        # -> are
+        # -> arguments
+    >>  # ['', '/usr/lib/python2.7', '/usr/lib/python2.7/plat-x86_64-linux-gnu', '/usr/lib/python2.7/lib-tk', '/usr/lib/python2.7/lib-old', '/usr/lib/python2.7/lib-dynload', '/home/ajepe/.local/lib/python2.7/site-packages', '/usr/local/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages', '/usr/lib/python2.7/dist-packages/gtk-2.0']
+```
+First, we import the __sys module__ using the __import__ statement. Basically, this translates to us telling Python that we want to use this module. 
+The sys module contains functionality related to the Python interpreter and its environment i.e. the system. When Python executes the import sys statement, it looks for the __sys__ module. In this case, it is one of the built-in modules, and hence Python knows where to find it.
+
+If it was not a compiled module i.e. a module written in Python, then the Python interpreter will search for it in the directories listed in its __sys.path__ variable. 
+If the module is found, then the statements in the body of that module are run and the module is made available for you to use. Note that the initialization is done only the first time that we import a module.
+
+## The from ... import statement
+If we want to directly import the __argv__ variable into our program (to avoid typing the __sys.__ everytime for it), then we can use the 
+
+```python 
+from sys import argv
+```
+In general, if possible we should try to avoid using this statement and use the import statement instead, by doing that our program will avoid name clashes and will be more readable.
+
+##Creating our own modules
+Creating our own modules is a cinch, we have been doing it all along! This is because every __Python program is also a module__. 
+We just have to make sure it has a  __.py__ extension. The following example should make it clear.
+```python 
+    # my_module.py
+    def say_hello():
+        print 'Hello to the people of the work'
+        
+    __version__ = '0.0.1'
+```
+The code above is a sample module. As we can see, there is nothing particularly special about it compared to our usual Python program.  We will next see how to use this module in our other Python programs.
+__Note that the module should be placed either in the same directory as the program from which we import it, or in one of the directories listed in *sys.path.*__
+```python
+    # another_module.py
+    import my_module # importing our first module
+    # now, let us call say_hello function in my_module
+    
+    my_module.say_hello() # - > 'Hello to the people of the work'
+    print __my_module.__version__ # ->  0.0.1
+    
+```
+Note that we use the same dotted notation to access members of the module.
+```python 
+    from my_module import say_hello, __version__
+    
+    say_hello()  # - > 'Hello to the people of the work'
+    print 'Version', __version__   # ->  0.0.1
+```
+
+### Summary
+Just like functions, modules are reusable programs. Packages are another hierarchy to organize modules. The standard library that comes
+with Python is an example of such a set of packages and modules. We have seen how to use these modules and create our own modules.
