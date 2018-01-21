@@ -13,6 +13,9 @@ System  Variables section, then select Edit and add ;C:\Python27 (please verify 
 On Mac and GNU/Linux distributions, python should come pre-installed. To check if python is installed on Ubuntu, open the 
 terminal (You can type Ctl + Alt + T). Type this command on the terminal which python.
 
+## Summary  
+Python is a language with a simple synthax. It is both easy to read and easy to write. Awareness for python is increasing on a daily basis because of the speed of implementation. It's application cuts accross several operations like data analysis, video gaming, web programming, and even machine learning. It\'s open source nature and portability makes it usable on different platforms. 
+
 # B - Python Basics
 Python is a simple to write and understand language. Reading Python feels like reading English. In fact a ... iterated that python feels like writing pseudocodes. Because of some of these qualities of python it recently, in a survey done by Stackoverflow overtook languages like Php as the third most preferred language by developers only trailing the likes of javaScript and PhP. In this section of python baics, we will look at some of the qualoities of the language which includes but are not limited to Extensibility, FLOOS etc. 
 
@@ -65,7 +68,7 @@ You can embed Python within your C/C\++ programs to give scripting capabilities 
 ## B(2) - First Code
 Enough of all the theories and let's get started with coding. Just like in every other programming course, our aim is to print a message to the console. Open command prompt in Windows or terminal in Mac/Linux and type python (if you get any errors, check the series on how to add python to your system PATH). You should be taken to an environment where you these 3 greater-than symblols (>>>). Type the next command `print("Hello World!")`.
 
-## B(2) - Variables
+## B(3) - Variables
 While building a web app or developing a vidoe game or any other application of sort, we need a way to prompt users for inputs and perform several operations with those input. These input are stored in containers known as variables. Python variables are made of four major types, leaving out the assorted ones list the lists and dictionaries.
 
 * Boolean  
@@ -99,7 +102,7 @@ Example:
 outputs `<type 'float'>`
 
 * None  
-None is a type in Python used to indicate that a variable has no value. This is hardly popular but is still a very important feature of the language.
+None is a type in Python used to indicate that a variable has no value. This is hardly popular but is still a very important feature of the language. It's can be used to pass a default value as an argument to a function upon which to perform some logic.
 Example:  
 ```python
     name = None
@@ -107,12 +110,43 @@ Example:
 ```
 outputs `<type 'NoneType'>`
 
+## B(4) Adding functionality to our code -- Comments
+While the code tells us \'how\', it is the comments that we put in the code that explain why. Commenting is a good attribute of a developer because it expalins to the reader the function of your code even before they are able to absorb the details of the code itself. In practice, this saves the reader (and the reader might even be you).
+
+1. Single-line Comments  
+Single-line comments are used to write short notes in the code which do not go beyond a line. Single-line comments are prepended with a (\#) symbol as shown in the code below:
+
+```python
+    # I am a single line comment
+    print ("Hello world!") # And I am also a single-line comment 
+   
+```
+
+2. multi-line comments  
+These are used to add comments usually exceeding a line into our code. The comments are enclosed between a pair of three single or double quotation marks on each side.
+
+```python
+    '''
+    The way python used the multi-line comments is so fascinating
+    I can't stop loving it.
+    Would you rather come along?
+    '''
+    def comments():
+        """
+        Even inside a function block, 
+        it works well.
+        """
+        pass
+```
 
 ## Summary
 Python is indeed an exciting and powerful language. It has the right combination of
 performance and features that make writing programs in Python both fun and easy.
 
 # C - Operators and Expressions
+Python has a wide range of operators but we will consider only a few important ones.
+
+
 
 # D - Control Flow
 * **If statement**  
