@@ -349,8 +349,3 @@ and the output of this is:
 1
 2
 ```
-
-* Milk 
-* Bread 
-    + Wholegrain
-* Butter
