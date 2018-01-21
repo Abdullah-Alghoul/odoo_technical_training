@@ -65,7 +65,7 @@ You can embed Python within your C/C\++ programs to give scripting capabilities 
 
 * **Extensive Libraries** <br>The  Python  Standard  Library  is  huge  indeed.  It  can  help  you  do  various  things involving  regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff.
 
-## B(2) - First Code
+## B(2) - First Code -- Hello World!
 Enough of all the theories and let's get started with coding. Just like in every other programming course, our aim is to print a message to the console. Open command prompt in Windows or terminal in Mac/Linux and type python (if you get any errors, check the series on how to add python to your system PATH). You should be taken to an environment where you these 3 greater-than symblols (>>>). Type the next command `print("Hello World!")`.
 
 ## B(3) - Variables
@@ -122,13 +122,13 @@ Single-line comments are used to write short notes in the code which do not go b
    
 ```
 
-2. multi-line comments  
+2. Multi-line comments  
 These are used to add comments usually exceeding a line into our code. The comments are enclosed between a pair of three single or double quotation marks on each side.
 
 ```python
     '''
     The way python used the multi-line comments is so fascinating
-    I can't stop loving it.
+    I cant stop loving it.
     Would you rather come along?
     '''
     def comments():
@@ -150,9 +150,35 @@ Python has a wide range of operators but we will consider only a few important o
 
 # D - Control Flow
 * **If statement**  
+We often want to perform an action only after we have checked for a condition, \'If\' statements come in handy in such situations. The basic synthax of the if statement is  
+```python
+    if <condition>:
+        <action_to_perform>
+```
 Example:  
 ```python
     name = "Olalekan"
     if name == "Olalekan":
         print ("He's definitely a man!")
 ```
+
+* **If/Else Statements**
+In the last example, we perform an action if our search condition is met, otherwise nothing happens. We oftem want to perform a different action if our test condition is not met. And that is where our If/Else statements play a vital role. The basic structure is:  
+```python
+    if <condition>:
+        <perform_action>
+    else:
+        <perform_another_action>
+```
+
+An example if to a code that prints out if a child is eligible for university based on if s/he is up to 18 years old.
+
+```python
+    # This code checks if child is eligible for university
+    age = 17
+    if age < 18:
+        print("You're not eligible for university!")
+    else:
+        print("Congrats, you can enroll in the university")
+```
+* **If/Elif/Else Statements**
