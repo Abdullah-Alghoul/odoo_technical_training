@@ -3,7 +3,7 @@
 Installation of python on a Windows OS is similar to the installation of any other package.
 Download the executable file from [python's official website](https://www.python.org/downloads/).
 
-### Adding to path
+* **Adding to path**
 If you open the command prompt and type python, a less-than-friendly error is thrown stating that no package 
 like that can be found. To fix this however, we should add the location to the system path.
 click  on  Control  Panel → System →  Advanced → Environment  Variables.  Click  on  the  variable  named  PATH  in  the
@@ -62,6 +62,14 @@ You can embed Python within your C/C\++ programs to give scripting capabilities 
 
 * **Extensive Libraries** <br>The  Python  Standard  Library  is  huge  indeed.  It  can  help  you  do  various  things involving  regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff.
 
+##B(2) - First Code
+Enough of all the theories and let's get started with coding. Just like in every other programming course, our aim is to print a message to the console. Open command prompt in Windows or terminal in Mac/Linux and type python (if you get any errors, check the series on how to add python to your system PATH). You should be taken to an environment where you these 3 greater-than symblols (>>>). Type the next command
+`print("Hello World!")`
+
 ## Summary
 Python is indeed an exciting and powerful language. It has the right combination of
 performance and features that make writing programs in Python both fun and easy.
+
+# C - Operators and Expressions
+
+# D - Control Flow
