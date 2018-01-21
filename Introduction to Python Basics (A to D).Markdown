@@ -68,9 +68,10 @@ Enough of all the theories and let's get started with coding. Just like in every
 ## B(2) - Variables
 While building a web app or developing a vidoe game or any other application of sort, we need a way to prompt users for inputs and perform several operations with those input. These input are stored in containers known as variables. Python variables are made of four major types, leaving out the assorted ones list the lists and dictionaries.
 
-* Boolean
+* Boolean  
 Booleans are list light switches; they have only two states-- on and off --which are True and False.  
-```
+Example:
+```python
     is_true = True
     is_false = False
     print (type(is_true), type(is_false))
@@ -78,7 +79,7 @@ Booleans are list light switches; they have only two states-- on and off --which
 The ouput of this code is:  
     `(<type 'bool'>, <type 'bool'>)`
 
-* Integer
+* Integer  
 integers are whole numbers without fractional parts. Examples of integers are 1, 2, 4 etc.
 Example:
 ```python
@@ -88,13 +89,23 @@ Example:
 The code above outputs  
 `<type 'int'>`.
 
-* Float
+* Float  
 Floating point numbers are numbers with fractional parts such as 17.90, 8.32, 0.12 etc.  
-```
+Example:
+```python
     staff_wage = 234.56
     print (type(staff_wage))
 ```
 outputs `<type 'float'>`
+
+* None  
+None is a type in Python used to indicate that a variable has no value. This is hardly popular but is still a very important feature of the language.
+Example:  
+```python
+    name = None
+    print(type(name))
+```
+outputs `<type 'NoneType'>`
 
 
 ## Summary
