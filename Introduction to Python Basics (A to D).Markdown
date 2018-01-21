@@ -1,7 +1,7 @@
 # A - Installation of Python
 ## A(1) Installation On Windows operating System
 Installation of python on a Windows OS is similar to the installation of any other package.
-Download the executable file from [https://www.python.org/downloads/].
+Download the executable file from https://www.python.org/downloads/.
 
 * **Adding to path**
 If you open the command prompt and type python, a less-than-friendly error is thrown stating that no package 
