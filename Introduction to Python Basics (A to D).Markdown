@@ -188,7 +188,7 @@ x = 'str'; y = 'str'; x == y  returns True.
 Compares if the objects are not equal
 x = 2; y = 3; x != y returns True.
 
-**\not (boolean NOT)**
+**not (boolean NOT)**
 If x is True, it returns False. If x is False, it returns True.
 x = True; not x returns False.
 
@@ -199,6 +199,22 @@ x = False; y = True; x and y returns False since x is False. In this case, Pytho
 **or (boolean OR)**
 If x is True, it returns True, else it returns evaluation of y
 x = True; y = False; x or y  returns True. Short-circuit evaluation applies here as well.
+
+**Ternary operator**  
+Python also has what we call ternary operator. The ternary operation is an if ... else block except that the expression is written on a line.
+For instance we want to assign wear to trousers if sex is male otherwise wear is skirt.
+
+```python
+    sex  = "Male"
+    wear = "Trousers" if sex == "Male" else "Skirt"
+    print(wear)
+```
+The output of the code is `Trousers`. If we change the sex to Female, the output becomes Skirt.
+
+## C(1) -  Operator Precedence
+Python has a built in order of executing python expression. however we won't be treating that in this course.
+
+## Expressions
 
 # D - Control Flow
 * **If statement**  
