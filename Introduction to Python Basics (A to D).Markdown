@@ -243,7 +243,7 @@ The code produces an output of
 ```
 Now let's expalain this a little bit. The range() method takes two arguments: the lower bound and the upper bound and generates a list of contiguous values. In our example, the range statement produces a list equivalent to this [1, 2, 3, 4]. So the for statement iterates over the list and prints out each of the items in it.
 
-    * Continue statement
+    + Continue statement
 The continue statement is used to skip a loop action for a particular criterium. Let's reconsider our last for loop example. Let\'s skip printing the number three(3). The code looks like this:
 ```python
     for i in range(1, 5):
@@ -257,7 +257,7 @@ The continue statement is used to skip a loop action for a particular criterium.
 2
 4
 ```  
-    * Break statement
+    + Break statement
 The break statement is used to exit a loop prematurely. If in our loop example we want to break out of the loop once we find the number 2, we can introduce a break statement in our code. We tweak the code a little to ensure we print 2 as the last number.
 ```python
     for i in range(1, 5):
