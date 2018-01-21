@@ -206,12 +206,12 @@ Example:
 ```
 the output of this is:  
 ```
-    20 is greater than zero
-    19 is greater than zero
-    18 is greater than zero
-    17 is greater than zero
-    16 is greater than zero
-    15 is greater than zero
+20 is greater than zero
+19 is greater than zero
+18 is greater than zero
+17 is greater than zero
+16 is greater than zero
+15 is greater than zero
 14 is greater than zero
 13 is greater than zero
 12 is greater than zero
@@ -227,7 +227,7 @@ the output of this is:
 2 is greater than zero
 1 is greater than zero
 ```
-* ** For Loop**  
+* **For Loop**  
 The for loop statement is used to perform iteration over a range of values. The loop repeats till the a termination point is reached. For our example we'll consider the for loop with a range method.
 create a python file called for.py and add the following block of code to it.
 
@@ -237,12 +237,13 @@ create a python file called for.py and add the following block of code to it.
 ```
 
 The code produces an output of
-`1
+`
+1
 2
 3
 4
 `
 Now let's expalain this a little bit. The range() method takes two arguments: the lower bound and the upper bound and generates a list of contiguous values. In our example, the range statement produces a list equivalent to this [1, 2, 3, 4]. So the for statement iterates over the list and prints out each of the items in it.
 
-..* Continue statement
-..* Break statement
+..*Continue statement  
+..*Break statement
