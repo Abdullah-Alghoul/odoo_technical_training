@@ -212,9 +212,14 @@ For instance we want to assign wear to trousers if sex is male otherwise wear is
 The output of the code is `Trousers`. If we change the sex to Female, the output becomes Skirt.
 
 ## C(1) -  Operator Precedence
-Python has a built in order of executing python expression. however we won't be treating that in this course.
+Python has a built in order of executing python expression. however we won't be treating that in this course. To get the official reference material documenting the order of precedence, [follow this link](http://docs.python.org/3/reference/expressions.html#operator-precedence).
 
 ## Expressions
+We have been using expressions since we started this course. What are expressions? Let's say we have a need to find the area of a rectangle with length 2cm and breadth 4cm. We can go on to perform an operation on the operands using a multiplication (\*) operator and thus assigning the output to a variable called area. This is an expression.
+    length = 2
+    breadth = 3
+    area = length * breadth # this is an expression
+We will use expressions throughout our use interaction with python.  
 
 # D - Control Flow
 * **If statement**  
