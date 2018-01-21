@@ -181,4 +181,18 @@ An example if to a code that prints out if a child is eligible for university ba
     else:
         print("Congrats, you can enroll in the university")
 ```
-* **If/Elif/Else Statements**
+And this code outputs `You're not eligible for university!`
+ 
+* **If/Elif/Else Statements**  
+The If/Elif/Else blocks allow us to check several conditions and perform specific actions based on any of them. We will get the idea better with the use of an example.
+```python
+    years_of_service = 23
+    if years_of_service < 10:
+        print("Young employee")
+    elif years_of_service < 20:
+        print("Intermediate employee")
+    else:
+        print("Old employee")
+```
+The code outputs `Old employee`
+
