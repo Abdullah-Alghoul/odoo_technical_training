@@ -60,8 +60,7 @@ If you need a critical piece of code to run very fast or want to have some piece
 * Embeddable
 You can embed Python within your C/C\++ programs to give scripting capabilities for your program’s users.
 
-* Extensive Libraries\s\s
-The  Python  Standard  Library  is  huge  indeed.  It  can  help  you  do  various  things involving  regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff.
+* **Extensive Libraries**  The  Python  Standard  Library  is  huge  indeed.  It  can  help  you  do  various  things involving  regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff.
 
 ## Summary
 Python is indeed an exciting and powerful language. It has the right combination of
