@@ -129,6 +129,7 @@ Python is indeed an exciting and powerful language. It has the right combination
 performance and features that make writing programs in Python both fun and easy.
 
 # C - Operators and Expressions
+## C(1) - Operators
 Most statements (logical lines) that you write will contain expressions. A simple example of an expression is 2 + 3. An expression can be broken down into operators and operands.
 
 Operators are functionality that do something and can be represented by symbols such as + or by special keywords. Operators require some data to operate on and such data is called operands. In this case, 2 and 3 are the operands. Python has a wide range of operators but we will consider only a few important ones.
@@ -211,11 +212,11 @@ For instance we want to assign wear to trousers if sex is male otherwise wear is
 ```
 The output of the code is `Trousers`. If we change the sex to Female, the output becomes Skirt.
 
-## C(1) -  Operator Precedence
+## C(2) -  Operator Precedence
 Python has a built in order of executing python expression. however we won't be treating that in this course. To get the official reference material documenting the order of precedence, [follow this link](http://docs.python.org/3/reference/expressions.html#operator-precedence).
 
-## Expressions
-We have been using expressions since we started this course. What are expressions? Let's say we have a need to find the area of a rectangle with length 2cm and breadth 4cm. We can go on to perform an operation on the operands using a multiplication (\*) operator and thus assigning the output to a variable called area. This is an expression.
+## C(3) - Expressions
+We have been using expressions since we started this course. What are expressions? Let's say we have a need to find the area of a rectangle with length 2cm and breadth 4cm. We can go on to perform an operation on the operands using a multiplication (\*) operator and thus assigning the output to a variable called area. This is an expression.  
     length = 2  
     breadth = 3  
     area = length * breadth # this is an expression  
