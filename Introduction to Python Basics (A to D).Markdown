@@ -245,5 +245,5 @@ The code produces an output of
 `
 Now let's expalain this a little bit. The range() method takes two arguments: the lower bound and the upper bound and generates a list of contiguous values. In our example, the range statement produces a list equivalent to this [1, 2, 3, 4]. So the for statement iterates over the list and prints out each of the items in it.
 
-..*Continue statement  
-..*Break statement
+..* Continue statement  
+..* Break statement
