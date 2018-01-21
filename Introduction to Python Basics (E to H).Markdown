@@ -332,8 +332,8 @@ Sets are unordered collections of simple objects. These are used when the existe
     'Gemany' in country_in_africa # -> False
 ```
 The example is pretty much self-explanatory because it involves basic set theory mathematics taught in school, we can add, remove and also find the union, intersert of the set.
-
-## Object Oriented Programming
+# G
+## G Object Oriented Programming
 All through till now, we designed our program around functions. This is called the __procedure-oriented way of programming__. There is another better way of organizing our program/code which is to combine data and functionality and wrap it inside something called an __object__. This is called the object oriented programming paradigm. 
 Most of the time we can use procedural programming, but when writing large or complex programs we can use object oriented programming techniques.
 
