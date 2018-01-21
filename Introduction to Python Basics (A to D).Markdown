@@ -65,6 +65,34 @@ You can embed Python within your C/C\++ programs to give scripting capabilities 
 ## B(2) - First Code
 Enough of all the theories and let's get started with coding. Just like in every other programming course, our aim is to print a message to the console. Open command prompt in Windows or terminal in Mac/Linux and type python (if you get any errors, check the series on how to add python to your system PATH). You should be taken to an environment where you these 3 greater-than symblols (>>>). Type the next command `print("Hello World!")`.
 
+## B(2) - Variables
+While building a web app or developing a vidoe game or any other application of sort, we need a way to prompt users for inputs and perform several operations with those input. These input are stored in containers known as variables. Python variables are made of four major types, leaving out the assorted ones list the lists and dictionaries.
+
+..* Boolean
+Booleans are list light switches; they have only two states-- on and off --which are True and False.  
+    is_true = True
+    is_false = False
+    print (type(is_true), type(is_false))
+The ouput of this code is:  
+    (<type 'bool'>, <type 'bool'>)
+
+..* Integer
+integers are whole numbers without fractional parts. Examples of integers are 1, 2, 4 etc.
+Example:
+```python
+    age = 21
+    print(type(age))
+```
+The code above outputs  
+`<type 'int'>`.
+
+..* Float
+Floating point numbers are numbers with fractional parts such as 17.90, 8.32, 0.12 etc.  
+    staff_wage = 234.56
+    print (type(staff_wage))
+outputs `<type 'float'>`
+
+
 ## Summary
 Python is indeed an exciting and powerful language. It has the right combination of
 performance and features that make writing programs in Python both fun and easy.
