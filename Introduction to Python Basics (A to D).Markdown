@@ -146,8 +146,6 @@ performance and features that make writing programs in Python both fun and easy.
 # C - Operators and Expressions
 Python has a wide range of operators but we will consider only a few important ones.
 
-
-
 # D - Control Flow
 * **If statement**  
 We often want to perform an action only after we have checked for a condition, \'If\' statements come in handy in such situations. The basic synthax of the if statement is  
@@ -236,7 +234,7 @@ create a python file called for.py and add the following block of code to it.
         print("{}".format(i))
 ```
 
-The code produces an output of
+The code produces an output of  
 `
 1
 2
@@ -245,5 +243,31 @@ The code produces an output of
 `
 Now let's expalain this a little bit. The range() method takes two arguments: the lower bound and the upper bound and generates a list of contiguous values. In our example, the range statement produces a list equivalent to this [1, 2, 3, 4]. So the for statement iterates over the list and prints out each of the items in it.
 
-..* Continue statement  
-..* Break statement
+.. * Continue statement
+The continue statement is used to skip a loop action for a particular criterium. Let's reconsider our last for loop example. Let\'s skip printing the number three(3). The code looks like this:
+```python
+    for i in range(1, 5):
+    if i == 3:
+        continue
+    print("{}".format(i))
+```
+3 is skipped in the output.
+```
+1
+2
+4
+```  
+.. * Break statement
+The break statement is used to exit a loop prematurely. If in our loop example we want to break out of the loop once we find the number 2, we can introduce a break statement in our code. We tweak the code a little to ensure we print 2 as the last number.
+```python
+    for i in range(1, 5):
+    print("{}".format(i))
+    if i == 2:
+        break
+```
+
+and the output of this is:
+```
+1
+2
+```
