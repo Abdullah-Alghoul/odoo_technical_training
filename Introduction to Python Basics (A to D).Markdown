@@ -1,5 +1,4 @@
 # A - Installation of Python
----
 ## A(1) Installation On Windows operating System
 Installation of python on a Windows OS is similar to the installation of any other package.
 Download the executable file from [python's official website](https://www.python.org/downloads/).
@@ -15,7 +14,6 @@ On Mac and GNU/Linux distributions, python should come pre-installed. To check i
 terminal (You can type Ctl + Alt + T). Type this command on the terminal which python.
 
 # B - Python Basics
----
 Python is a simple to write and understand language. Reading Python feels like reading English. In fact a ... iterated that python feels like writing pseudocodes. Because of some of these qualities of python it recently, in a survey done by Stackoverflow overtook languages like Php as the third most preferred language by developers only trailing the likes of javaScript and PhP. In this section of python baics, we will look at some of the qualoities of the language which includes but are not limited to Extensibility, FLOOS etc. 
 
 Python is one of those rare languages which can claim to be both simple and powerful. You will find yourself pleasantly surprised to see how easy it is to concentrate on the solution to the problem rather than the syntax and structure of the language you are programming in.
@@ -29,7 +27,6 @@ for scripting and rapid application development in many areas on most
 platforms.
 
 ## B(1) Features of Python
----
 * Simple
 Python is a simple and minimalistic language. Reading a good Python program feels
 almost like reading English, although very strict English! This pseudo-code nature
@@ -67,6 +64,5 @@ You can embed Python within your C/C\++ programs to give scripting capabilities 
 The  Python  Standard  Library  is  huge  indeed.  It  can  help  you  do  various  things involving  regular expressions, documentation generation, unit testing, threading, databases, web browsers, CGI, FTP, email, XML, XML-RPC, HTML, WAV files, cryptography, GUI (graphical user interfaces), and other system-dependent stuff.
 
 ## Summary
----
 Python is indeed an exciting and powerful language. It has the right combination of
 performance and features that make writing programs in Python both fun and easy.
