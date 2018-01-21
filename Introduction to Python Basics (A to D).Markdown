@@ -72,8 +72,10 @@ performance and features that make writing programs in Python both fun and easy.
 # C - Operators and Expressions
 
 # D - Control Flow
-* If statement
-Example:
+* **If statement**
+Example:  
+`   
     name = "Olalekan"
-    if name == "Olalekan":
-        print ("He is definitely a man!")
+    if name == "Olalekan"
+        print ("He's definitely a man!")
+`
