@@ -1,7 +1,7 @@
 # A - Installation of Python
 ## A(1) Installation On Windows operating System
 Installation of python on a Windows OS is similar to the installation of any other package.
-Download the executable file from [https://www.python.org/downloads/].
+Download the executable file from https://www.python.org/downloads/.
 
 * **Adding to path**
 If you open the command prompt and type python, a less-than-friendly error is thrown stating that no package 
@@ -196,3 +196,53 @@ The If/Elif/Else blocks allow us to check several conditions and perform specifi
 ```
 The code outputs `Old employee`
 
+* **While expression**  
+Example:  
+```python
+    number = 20
+    while number > 0:
+        print "{num} is greater than 0".format(num=number)
+        number -= 1
+```
+the output of this is:  
+```
+    20 is greater than zero
+    19 is greater than zero
+    18 is greater than zero
+    17 is greater than zero
+    16 is greater than zero
+    15 is greater than zero
+14 is greater than zero
+13 is greater than zero
+12 is greater than zero
+11 is greater than zero
+10 is greater than zero
+9 is greater than zero
+8 is greater than zero
+7 is greater than zero
+6 is greater than zero
+5 is greater than zero
+4 is greater than zero
+3 is greater than zero
+2 is greater than zero
+1 is greater than zero
+```
+* ** For Loop**  
+The for loop statement is used to perform iteration over a range of values. The loop repeats till the a termination point is reached. For our example we'll consider the for loop with a range method.
+create a python file called for.py and add the following block of code to it.
+
+```python
+    for i in range(1, 5):
+        print("{}".format(i))
+```
+
+The code produces an output of
+`1
+2
+3
+4
+`
+Now let's expalain this a little bit. The range() method takes two arguments: the lower bound and the upper bound and generates a list of contiguous values. In our example, the range statement produces a list equivalent to this [1, 2, 3, 4]. So the for statement iterates over the list and prints out each of the items in it.
+
+..* Continue statement
+..* Break statement
