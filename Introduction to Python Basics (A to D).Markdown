@@ -216,9 +216,9 @@ Python has a built in order of executing python expression. however we won't be 
 
 ## Expressions
 We have been using expressions since we started this course. What are expressions? Let's say we have a need to find the area of a rectangle with length 2cm and breadth 4cm. We can go on to perform an operation on the operands using a multiplication (\*) operator and thus assigning the output to a variable called area. This is an expression.
-    length = 2
-    breadth = 3
-    area = length * breadth # this is an expression
+    length = 2  
+    breadth = 3  
+    area = length * breadth # this is an expression  
 We will use expressions throughout our use interaction with python.  
 
 # D - Control Flow
