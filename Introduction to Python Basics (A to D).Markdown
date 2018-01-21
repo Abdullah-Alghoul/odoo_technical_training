@@ -74,8 +74,8 @@ performance and features that make writing programs in Python both fun and easy.
 # D - Control Flow
 * **If statement**  
 Example:  
-`
-    name = "Olalekan"  
-    if name == "Olalekan":  
-        print ("He's definitely a man!")  
-`
+```python
+    name = "Olalekan"
+    if name == "Olalekan":
+        print ("He's definitely a man!")
+```
