@@ -1,7 +1,7 @@
 # Installation of Python
+
 ## A(1) Installation On Windows operating System
-Installation of python on a Windows OS is similar to the installation of any other package.
-Download the executable file from https://www.python.org/downloads/.
+Installation of python on a Windows OS is similar to the installation of any other package. Download the executable file from https://www.python.org/downloads/.
 
 * **Adding to path**
 If you open the command prompt and type python, a less-than-friendly error is thrown stating that no package like that can be found. To fix this however, we should add the location to the system path. Click  on  Control  Panel → System →  Advanced → Environment  Variables.  Click  on  the  variable  named  PATH  in  the System  Variables section, then select Edit and add ;C:\Python27 (please verify that this folder exists.
@@ -350,10 +350,9 @@ and the output of this is:
 2
 ```
 
-# (E)
 ## E(1) Functions (Procedures)
  
-These  are reusable pieces of programs. They allows us  to give a name and encapsulate a block of statements*(codes)*,  allowing us to run that block using the specified name anywhere in the program and any number of times. 
+Functions are reusable pieces of programs. They allows us  to give a name and encapsulate a block of statements*(codes)*,  allowing us to run that block using the specified name anywhere in the program and any number of times. 
 
 The function concept is probably the most important building block of any non-trivial software (in any programming language).
 
