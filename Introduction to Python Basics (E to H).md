@@ -384,7 +384,7 @@ Example
             
        # instance of the lass Person
        p = Person()
-       p.walk() -> # Hi, I can talk.
+       p.walk() # -> Hi, I can talk.
        p.talk() # -> See, I can also walk
 
 
