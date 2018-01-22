@@ -486,7 +486,7 @@ __Note that the default argument value should be a constant. More precisely, the
 The function named __warning__ is used to print a string as many times as specified.  If we don’t supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of 1 to the parameter times.
 
 In the first usage of __warning__ , we supply only the string and it prints the string once. In the second usage, we supply both the string and an argument __2__ stating that we want to say the string message two  times.
-## E(6) Non keyword and key-worded arguments (\*arg and \**kwargs)
+## E(6) Non keyword and key-worded arguments (\*args and \**kwargs)
 
 Key worded arguments are \**kwargs are mostly used in function definitions in Odoo. \*args and \**kwargs allow
 us  to pass a variable number of arguments to a function. What variable
