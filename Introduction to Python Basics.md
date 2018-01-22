@@ -67,6 +67,9 @@ Example:
 The ouput of this code is:  
     `(<type 'bool'>, <type 'bool'>)`
 
+* String
+Our names are examples of variables of type string. Strings have values that are quoted with single or double quotation marks. As an example let's declare a variable name with the value of "Olalekan Babawale".
+
 * Integer  
 integers are whole numbers without fractional parts. Examples of integers are 1, 2, 4 etc.
 Example:
@@ -475,9 +478,9 @@ __Note that the default argument value should be a constant. More precisely, the
         """warn a friend about danger ahead, in number of times."""
         print message * times
         
-    shout("Don't play with python, it's very dangerous")    # -> Don't play with python, it's very dangerous
+    warning("Don't play with python, it's very dangerous")    # -> Don't play with python, it's very dangerous
     
-    shout("Don't play with python, it's very dangerous", 2) # -> Don't play with python, it's very dangerous  
+    warning("Don't play with python, it's very dangerous", 2) # -> Don't play with python, it's very dangerous  
                                                             # -> Don't play with python, it's very dangerous 
 ```
 The function named __warning__ is used to print a string as many times as specified.  If we don’t supply a value, then by default, the string is printed just once. We achieve this by specifying a default argument value of 1 to the parameter times.
