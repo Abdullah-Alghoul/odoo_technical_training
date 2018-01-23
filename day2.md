@@ -64,7 +64,7 @@ screenshot:
 ```bash
     ./odoo-bin #This will launch/start odoo server
 ```
-![Odoo Running](img/Screenshot-2018-1-23 Odoo.png  "Odoo Running")
+![Odoo Running](https://github.com/Matt-OBell/Odoo-Technical-Traning/blob/master/img/Screenshot-2018-1-23%20Odoo.png  "Odoo Running")
 
 But wait, we are yet to complete the installation, but we are almost through, we need to set up our database sever(postgresSQL) before we can make use ofour Odoo. let us install the database server quikly.
 
