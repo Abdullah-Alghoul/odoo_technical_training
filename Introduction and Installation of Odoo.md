@@ -91,7 +91,7 @@ For us to be able to create a new database, our user must be a PostgreSQL user. 
 ```
 To change the database login for our newly created role/user
 ```SQL
-    ALTER ROLE davide WITH PASSWORD '****';
+    ALTER ROLE user_name WITH PASSWORD '****';
 ```
 To create a new database, use the __createdb__ command. Let's create a __demo__ database:
 ```bash
