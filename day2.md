@@ -1,6 +1,7 @@
-A Debian based OS e,g Ubuntu system is recommended for the Odoo server, though Odoo can run on a variety of operating systems, so why pick Debian at the expense of other operating systems? Because Debian is considered the reference deployment platform by the Odoo team; it has the best support. It will be easier to find help and additional resources if we work with Debian/Ubuntu. It's also the platform that the majority of developers work on and where most deployments are rolled out.
 
-To install Odoo we only need these following applications:
+A Debian based OS e,g Ubuntu system is recommended for the Odoo server, though Odoo can run on a variety of operating systems, so why pick Debian at the expense of other operating systems? Because Debian is considered the reference deployment platform by the Odoo team; it has the best support.  It will be easier to find help and additional resources if we work with Debian/Ubuntu. It's also the platform that the majority of developers work on and where most deployments are rolled out.
+
+#####To install Odoo we only need these following applications:
 1. Python
 2. PostgreSQL
 3. Odoo and all the required libraries
@@ -64,7 +65,7 @@ screenshot:
 ```bash
     ./odoo-bin #This will launch/start odoo server
 ```
-![Odoo Running](https://github.com/Matt-OBell/Odoo-Technical-Traning/blob/master/img/Screenshot-2018-1-23%20Odoo.png  "Odoo Running")
+![Odoo Running](img/Screenshot-2018-1-23 Odoo.png  "Odoo Running")
 
 But wait, we are yet to complete the installation, but we are almost through, we need to set up our database sever(postgresSQL) before we can make use ofour Odoo. let us install the database server quikly.
 
@@ -82,3 +83,22 @@ But wait, we are yet to complete the installation, but we are almost through, we
 * postgresql-contrib-9.6 - additional supplied modules libpq-dev - libraries and headers for C language frontend development
 * postgresql-server-dev-9.6 - libraries and headers for C language backend development
 * pgadmin3 - pgAdmin III graphical administration utility
+
+
+For us to be able to create a new database, our user must be a PostgreSQL user. The following command creates a PostgreSQL superuser for the current Unix user, though it bad practice to use superadmin for this purpose, but for leaning sake we shall.
+```bash
+    >>> sudo createuser --superuser $(whoami) # Create postgres user using current log in user.
+```
+To change the database login for our newly created role/user
+```SQL
+    ALTER ROLE davide WITH PASSWORD '****';
+```
+To create a new database, use the __createdb__ command. Let's create a __demo__ database:
+```bash
+    >>> createdb demo
+```
+To initialize this database with the Odoo data schema, we should run Odoo on the empty database using the __-d__ option:
+```bash
+    >>> ~/odoo-dev/odoo/odoo-bin -d demo
+```
+This will take a couple of minutes to initialize a __demo__ database, and it will end with an INFO log message, __Modules loaded.__
