@@ -216,7 +216,7 @@ The ```write``` method sets the values at once on all the elements of the record
 described using a dictionary. Using write here is more efficient than iterating through the recordset to
 assign the value to each of them one by one.
 
-<h4>F8. Adding access control security</h4>
+<h4>F8. Adding kanban view</h4>
 
 Used to organize tasks, production processes, etc… their root element is <kanban>.
 
