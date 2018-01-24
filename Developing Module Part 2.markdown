@@ -218,6 +218,38 @@ assign the value to each of them one by one.
 
 <h4>F8. Adding access control security</h4>
 
+Used to organize tasks, production processes, etc… their root element is <kanban>.
+
+A kanban view shows a set of cards possibly grouped in columns. Each card represents a record, and each column the values of an aggregation field.
+
+Kanban views define the structure of each card as a mix of form elements
+
+```
+<record id="add_kanban_view_todo" model="ir.ui.view">
+    <field name="name">todo.task.kanban</field>
+    <field name="model">todo.task</field>
+    <field name="arch" type="xml">
+        <kanban>
+            <field name="name"/>
+            <templates>
+                <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click">
+                        <div class="oe_kanban_details">
+                            <strong><field name="name"/></strong>
+        
+                            <div name="tags"/>
+                        </div>
+                    </div>
+                </t>
+            </templates>
+        </kanban>
+    </field>
+</record>
+
+```
+
+<h4>F9. Adding access control security</h4>
+
 You might have noticed that, upon loading, our module is getting a warning message in the server log:
 
 The model todo.task has no access rules, consider adding one.
@@ -266,3 +298,22 @@ attribute. It should look like this:
 As before, upgrade the module for these additions to take effect. The warning message should be
 gone, and we can confirm that the permissions are OK by logging in with the user demo (password is
 also demo ).
+
+<h4>F10. Advancing Our Todo App with WorkFlow</h4>
+
+Going advance in our todo app, we shall be adding workflow. Workflow is the transitioning from one state to the other.
+
+In our todo app, let's add a field called **state** to the ```todo_model.py```
+
+```
+state = fields.Selection([('running', 'Running'), ('done', 'Done'), ('close', 'Closed')], string="State")
+```
+
+Don't forget to add it to the xml inside the header:
+
+```<field name="state" widget="statusbar"/>```
+
+The widget **statusbar**, simply makes odoo see the field **state** as a statusbar for workflow, if this is not added, 
+then odoo will be seeing this as a field.
+
+
