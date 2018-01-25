@@ -6,6 +6,30 @@ The Many2one relationship accepts two positional arguments: the related model (c
 comodel keyword argument) and the title string . It creates a field in the database table with a
 foreign key to the related table.
 
+Let's add a Many2one field to our app;
+
+```stage_id = fields.Many2one('todo.task.stage', 'Stage')```
+
+Once this is done, you need to create a model called ```todo.task.stage``` and add few fields
+
+```
+class Stage(models.Model):
+    _name = 'todo.task.stage'
+    _description = 'To-do Stage'
+    _order = 'sequence,name'
+
+    # String fields:
+    name = fields.Char('Name')
+    desc = fields.Text('Description')
+    state = fields.Selection(
+        [('draft', 'New'), ('open', 'Started'),
+         ('done', 'Closed')], 'State')
+ 
+    image = fields.Binary('Image')
+
+    tasks = fields.One2many('todo.task', 'stage_id')
+```
+
 <h4>Many-to-many relationships</h4>
 
 The Many2many minimal signature accepts one argument for the related model, and it is recommended
@@ -32,8 +56,6 @@ An inverse of a Many2one can be added to the other end of the relationship. This
 actual database structure, but allows us easily browse from the one side of the many related records.
 A typical use case is the relationship between a document header and its lines.
 
-In our example, a One2many inverse relationship on Stages allows us to easily list all the Tasks in that
-Stage
 
 <h2>Computed fields</h2>
 
@@ -59,7 +81,7 @@ To create a related field, we declare a field of the needed type, just like with
 but instead of compute we use the related attribute with the dot-notation field chain to reach the
 desired field.
 
-<h2>Model Constraints<h2>
+<h2>Model Constraints</h2>
 
 To enforce data integrity, models also support two types of constraints: SQL and Python
 SQL constraints are added to the database table definition and are enforced directly by PostgreSQL.
