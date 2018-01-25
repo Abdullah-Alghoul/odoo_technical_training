@@ -200,7 +200,7 @@ Once the extension point is located, you can either modify it or have XML elemen
 a practical example, to add the date_deadline field before the is_done field, we would write the
 following in arch :
 ```
-<xpath expr="//field[@name]='is_done'" position="before">
+<xpath expr="//field[@name='is_done']" position="before">
     <field name="date_deadline" />
 </xpath>
 ```
