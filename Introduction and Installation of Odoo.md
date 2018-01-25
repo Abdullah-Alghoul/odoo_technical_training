@@ -1,7 +1,7 @@
 
 A Debian based OS e,g Ubuntu system is recommended for the Odoo server, though Odoo can run on a variety of operating systems, so why pick Debian at the expense of other operating systems? Because Debian is considered the reference deployment platform by the Odoo team; it has the best support.  It will be easier to find help and additional resources if we work with Debian/Ubuntu. It's also the platform that the majority of developers work on and where most deployments are rolled out.
 
-#####To install Odoo we only need these following applications:
+#### To install Odoo we only need these following applications:
 1. Python
 2. PostgreSQL
 3. Odoo and all the required libraries
